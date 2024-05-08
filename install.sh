@@ -4,13 +4,13 @@
 directories=($(cat directories.txt | awk '!/#/ {print $0}'))
 
 if [ -d "/home/$USER/.config" ]; then
-	install
+	install_config
 else
 	mkdir /home/$USER/.config
-	install
+	install_config
 fi
 
-install() {
+install_config() {
 	for directory in "${directories[@]}"
 	do
 		directory_name=$(basename "$directory")
