@@ -3,3 +3,4 @@
 /home/wi/.config/polybar
 /home/wi/.config/bspwm
 /home/wi/.config/sxhkd
+/home/wi/.config/picom
