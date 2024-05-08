@@ -1,12 +1,9 @@
 #!/bin/bash
 
-# Add or remove directories (full path) to add to the repo
-directories=(
-	"/home/wi/.config/nvim"
-)
+# Add or remove directories (full path) in file "directories.txt" to add to the repo
+directories=($(cat directories.txt | awk '!/#/ {print $0}'))
 
-for directory in $directories 
+for directory in "${directories[@]}"
 do
-	#echo $(ls "$directory")
 	cp -r "$directory" .
 done
