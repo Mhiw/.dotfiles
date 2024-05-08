@@ -8,7 +8,7 @@ install_config() {
 	do
 		directory_name=$(basename "$directory")
 		mkdir $directory
-		cp -r $directory_name $directory
+		cp -r $directory_name /home/$USER/.config/
 	done
 }
 
