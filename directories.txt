@@ -1,3 +1,5 @@
 # Directories to be fetched/installed
 /home/wi/.config/nvim
 /home/wi/.config/polybar
+/home/wi/.config/bspwm
+/home/wi/.config/sxhkd
