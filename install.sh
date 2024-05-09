@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Add or remove directories/files (full path) in file "include.txt" to add to the repo
-directories=($(cat include.txt | awk '!/#/ {print $0}'))
+items=($(cat include.txt | awk '!/#/ {print $0}'))
 
 install_config() {
-	for directory in "${directories[@]}"
+	for item in "${items[@]}"
 	do
-		directory_name=$(basename "$directory")
-		mkdir $directory
-		cp -r $directory_name /home/$USER/.config/
+		item_name=$(basename "$directory")
+		mkdir $item
+		cp -r $item_name $(echo $item | sed 's/$item_name//g')
 	done
 }
 
