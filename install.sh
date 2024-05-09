@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Add or remove directories (full path) in file "directories.txt" to add to the repo
-directories=($(cat directories.txt | awk '!/#/ {print $0}'))
+# Add or remove directories/files (full path) in file "include.txt" to add to the repo
+directories=($(cat include.txt | awk '!/#/ {print $0}'))
 
 install_config() {
 	for directory in "${directories[@]}"
