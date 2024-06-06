@@ -20,3 +20,5 @@ export ARCHFLAGS="-arch x86_64"
 alias nv="nvim"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
+
+export EMSDK_QUIET=1

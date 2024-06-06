@@ -5,4 +5,5 @@
 /home/wi/.config/sxhkd
 /home/wi/.config/picom
 /home/wi/.config/alacritty
+/home/wi/.config/tmux
 /home/wi/.zshrc
