@@ -22,3 +22,6 @@ alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
 export EMSDK_QUIET=1
+
+# Created by `pipx` on 2024-06-07 17:24:05
+export PATH="$PATH:/home/wi/.local/bin"

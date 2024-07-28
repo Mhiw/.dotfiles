@@ -1,0 +1,44 @@
+/* gruvbox-dark */
+* {
+	font-family: 'Hack Nerd Font';
+	font-size: 14px;
+	color: #ebdbb2;
+	border-radius: 10px;
+}
+
+window#waybar {
+	background-color: transparent;
+}
+
+box.module button:hover {
+	border: 1px solid #ebdbb2;
+
+	background: rgba(235, 219, 178, 0.2);
+}
+
+.modules-left {
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border: 2px solid #ebdbb2;
+	
+	background-color: #282828;
+}
+
+.modules-center {
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border: 2px solid #ebdbb2;
+	
+	background-color: #282828;
+}
+
+.modules-right {
+	padding-right: 1em;
+	padding-left: 1em;
+
+	border: 2px solid #ebdbb2;
+
+	background-color: #282828;
+}

@@ -1,0 +1,56 @@
+// -*- mode: jsonc -*-
+{
+	"layer": "top",
+	"position": "top",
+	"height": 30,
+	"margin-top": 10,
+	"margin-left": 10,
+	"margin-right": 10,
+	"reload_style_on_change": true,
+	"modules-left": [
+		"custom/distro",
+		"hyprland/workspaces",
+	],
+	"modules-center": [
+		"hyprland/window",
+	],
+	"modules-right": [
+		"custom/time",
+		"custom/power",
+	],
+	"hyprland/workspaces": {
+		"window-rewrite-default": "󰘔",
+		"window-rewrite": {
+			"class<firefox>": "",
+			"class<Brave-browser>": "󰖟",
+			"class<Alacritty>": "",
+			"title<tmux *>": "",
+			"class<Spotify>": "",
+			"class<discord>": "󰙯",
+			"class<obsidian>": "󰎚",
+		},
+		"format": "<b>{id} <big>{windows}</big></b>",
+	},
+	"hyprland/window": {
+		"separate-outputs": true,
+		"format": "<b>{title}</b>",
+	},
+	"custom/time": {
+		"format": "<b>{} </b>",
+		"exec": "date +%H:%M:%S",
+		"interval": 1,
+	},
+	"custom/power": {
+		"format": "<big><b>⏻ </b></big>",
+		"on-double-click": "exec systemctl poweroff",
+		"on-double-click-right": "exec $HOME/.config/waybar/scripts/reload.sh",
+	},
+	"custom/distro": {
+		"format": "<big><b>{} </b></big>",
+		"exec": "$HOME/.config/waybar/scripts/distro.sh",
+		"on-click": "alacritty -e sh -c \"fastfetch; exec $SHELL\"",
+	},
+	"custom/stat": {
+		
+	}
+}

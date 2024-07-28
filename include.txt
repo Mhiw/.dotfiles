@@ -7,3 +7,5 @@
 /home/wi/.config/alacritty
 /home/wi/.config/tmux
 /home/wi/.zshrc
+/home/wi/.config/hypr
+/home/wi/.config/waybar
